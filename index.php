@@ -1,32 +1,5 @@
 <?php
-/*if (isset($_POST['envoyer'])) {
-    $isUpload = true;
-    $isPrint = false;
 
-    for ($i = 0; $i < count($_FILES['monfichier']['name']); $i++) {
-        $tmpFilepath = $_FILES['monfichier']['tmp_name'][$i];
-        $types = ['.png', '.gif', '.jpg'];
-        if ($tmpFilepath != "")  {
-            $filePath = "uploads/" . date('d-m-Y-H-i-s') . '-' . $_FILES['monfichier']['name'][$i];
-            if (!in_array($_FILES['monfichier']['name'][$i], $types)){
-                echo $errors['type'] = " fichier incorrect";
-            }
-            if ($_FILES['monfichier']['size'][$i] > 1000000) {
-                if (!$isPrint) {
-                    echo $errors['size'] = "fichier trop gros";
-                    $isPrint = true;
-                }
-                $isUpload = false;
-            }
-            else
-                move_uploaded_file($tmpFilepath, $filePath);
-        }
-        else
-            echo "error files";
-    }
-    if ($isUpload)
-        echo "fichier ok";
-}*/
 $isupload = true;
 
 if (isset($_POST['envoyer'])) {
